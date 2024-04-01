@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script>
+        function salvar(){
+            let nome = document.getElementById("form-cadastro").nome.value;
+            alert(nome)
+        }
+    </script> -->
+   
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+        <!-- <img  src="imagem/plantas.jpg" > -->
+    </div>
+    </header>
+
+    <form id="form-cadastro" onsubmit="return false">
+
+        <div class="linha">
+            <label>Digite o nome da Planta:</label>
+            <input type="text" name="planta" maxlength="40" autocomplete="off" />
+        </div>
+
+        <div class="linha">
+            <label>Digite a Espécie</label>
+            <input type="text" name="especie" maxlength="80" />
+        </div>
+        <div class="linha">
+            <label>Altura máxima:</label>
+            <input type="number" name="altura" maxlength="15" />
+        </div>
+
+        <br>
+        <input type="submit" name="enviar" value="Cadastrar" onclick="salvar()" />
+    </form>
+
+
+   <script src="js/script.js"></script> 
+    
+</body>
+
+</html>
